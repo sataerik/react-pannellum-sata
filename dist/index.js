@@ -32,6 +32,8 @@ function _createClass(Constructor, protoProps, staticProps) {
   return Constructor;
 }
 
+let _uiText = {};
+
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -43,7 +45,9 @@ function _defineProperty(obj, key, value) {
   } else {
     obj[key] = value;
   }
-
+  if(key === 'uiText'){
+    _uiText = obj['uiText'];
+  }
   return obj;
 }
 
@@ -1527,23 +1531,24 @@ var pannellum = (function (window, document, undefined$1) {
     // Some strings contain '%s', which is a placeholder for inserted values
     // When setting strings in external configuration, `\n` should be used instead of `<br>` to insert line breaks
 
-    defaultConfig.strings = {
-      // Labels
-      loadButtonLabel: "Click to load panorama",
-      loadingLabel: "Loading...",
-      bylineLabel: "by %s",
-      // One substitution: author
-      // Errors
-      noPanoramaError: "No panorama image was specified.",
-      fileAccessError: "The file %s could not be accessed.",
-      // One substitution: file URL
-      malformedURLError: "There is something wrong with the panorama URL.",
-      iOS8WebGLError: "Due to iOS 8's broken WebGL implementation, only " + "progressive encoded JPEGs work for your device (this " + "panorama uses standard encoding).",
-      genericWebGLError: "Your browser does not have the necessary WebGL support to display this panorama.",
-      textureSizeError: "This panorama is too big for your device! It's " + "%spx wide, but your device only supports images up to " + "%spx wide. Try another device." + " (If you're the author, try scaling down the image.)",
-      // Two substitutions: image width, max image width
-      unknownError: "Unknown error. Check developer console."
-    };
+    // defaultConfig.strings = {
+    //   // Labels
+    //   loadButtonLabel: "<p>Katt to load panorama</p>",
+    //   loadingLabel: "Loading...",
+    //   bylineLabel: "by %s",
+    //   // One substitution: author
+    //   // Errors
+    //   noPanoramaError: "No panorama image was specified.",
+    //   fileAccessError: "The file %s could not be accessed.",
+    //   // One substitution: file URL
+    //   malformedURLError: "There is something wrong with the panorama URL.",
+    //   iOS8WebGLError: "Due to iOS 8's broken WebGL implementation, only " + "progressive encoded JPEGs work for your device (this " + "panorama uses standard encoding).",
+    //   genericWebGLError: "Your browser does not have the necessary WebGL support to display this panorama.",
+    //   textureSizeError: "This panorama is too big for your device! It's " + "%spx wide, but your device only supports images up to " + "%spx wide. Try another device." + " (If you're the author, try scaling down the image.)",
+    //   // Two substitutions: image width, max image width
+    //   unknownError: "Unknown error. Check developer console."
+    // };
+    defaultConfig.strings = Object.assign(uiText,_uiText);
 
     container = typeof container === "string" ? document.getElementById(container) : container;
     container.classList.add("pnlm-container");
@@ -3465,7 +3470,7 @@ var pannellum = (function (window, document, undefined$1) {
       if (!config.hasOwnProperty("author")) infoDisplay.author.innerHTML = "";
       if (!config.hasOwnProperty("title") && !config.hasOwnProperty("author")) infoDisplay.container.style.display = "none"; // Fill in load button label and loading box text
 
-      controls.load.innerHTML = "<p>" + config.strings.loadButtonLabel + "</p>";
+      controls.load.innerHTML = config.strings.loadButtonLabel;
       infoDisplay.load.boxp.innerHTML = config.strings.loadingLabel; // Process other options
 
       for (var key in config) {
@@ -3543,6 +3548,12 @@ var pannellum = (function (window, document, undefined$1) {
 
               break;
 
+            /*case "uiText":
+                if(config[key]){
+                    defaultConfig.strings = config[key];
+                }
+              break;*/
+
             case "hotSpotDebug":
               if (config[key]) hotSpotDebugIndicator.style.display = "block";else hotSpotDebugIndicator.style.display = "none";
               break;
@@ -3576,7 +3587,6 @@ var pannellum = (function (window, document, undefined$1) {
      * Toggles fullscreen mode.
      * @private
      */
-
 
     function toggleFullscreen() {
       if (loaded && !error) {
@@ -4688,7 +4698,7 @@ var pannellum = (function (window, document, undefined$1) {
 })(typeof window === "undefined" ? null : window, typeof document === "undefined" ? null : document);
 
 var uiText = {
-  loadButtonLabel: 'Click to load panorama',
+  loadButtonLabel: '<p>Katttt to load panorama</p>',
   loadingLabel: 'Loading...',
   bylineLabel: 'by %s',
   noPanoramaError: 'No panorama image was specified.',
