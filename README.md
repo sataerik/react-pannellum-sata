@@ -1,15 +1,13 @@
-# react-pannellum
+# react-pannellum-sata
 
 > A library show panorama image for react
 
 > This library use source from [https://pannellum.org/](https://pannellum.org/)
 
-[![NPM](https://img.shields.io/npm/v/react-pannellum.svg)](https://www.npmjs.com/package/react-pannellum) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 ## Install
 
 ```bash
-npm install --save react-pannellum
+npm install --save https://github.com/sataerik/react-pannellum-sata
 ```
 
 ## Usage
@@ -20,7 +18,7 @@ npm install --save react-pannellum
 
 ```jsx
 import React from "react";
-import ReactPannellum, { getConfig } from "react-pannellum";
+import ReactPannellum, { getConfig } from "react-pannellum-sata";
 
 class Example extends React.Component {
   click() {
