@@ -1,33 +1,38 @@
 {
-  "_from": "git+https://github.com/sataerik/react-pannellum-sata.git",
+  "_args": [
+    [
+      "react-pannellum-sata@0.1.15",
+      "E:\\Projects\\React\\kkando"
+    ]
+  ],
+  "_from": "react-pannellum-sata@0.1.15",
   "_id": "react-pannellum-sata@0.1.15",
   "_inBundle": false,
-  "_integrity": "",
+  "_integrity": "sha512-NbQ6j2huSxgZo+EaEJmTwyuRkAi3lmm2uF9idzOQe5B02L8jWsw6CNTDmRNyw0iB5Xcb8kmsB7HWlKhiWZMM+w==",
   "_location": "/react-pannellum-sata",
   "_phantomChildren": {},
   "_requested": {
-    "type": "git",
-    "raw": "https://github.com/sataerik/react-pannellum-sata",
-    "rawSpec": "https://github.com/sataerik/react-pannellum-sata",
-    "saveSpec": "git+https://github.com/sataerik/react-pannellum-sata.git",
-    "fetchSpec": "https://github.com/sataerik/react-pannellum-sata.git",
-    "gitCommittish": null
+    "type": "version",
+    "registry": true,
+    "raw": "react-pannellum-sata@0.1.15",
+    "name": "react-pannellum-sata",
+    "escapedName": "react-pannellum-sata",
+    "rawSpec": "0.1.15",
+    "saveSpec": null,
+    "fetchSpec": "0.1.15"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/sataerik/react-pannellum-sata.git#c5e61c6cb62b1565921290aed0ae22133d73a438",
-  "_spec": "https://github.com/sataerik/react-pannellum-sata",
+  "_resolved": "",
+  "_spec": "0.1.15",
   "_where": "E:\\Projects\\React\\kkando",
   "author": {
     "name": "hoaiduyit"
   },
   "bugs": {
-    "url": "https://github.com/sataerik/react-pannellum-sata/issues"
+    "url": "https://github.com/hoaiduyit/react-pannellum/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "A library show panorama image for react",
   "devDependencies": {
     "@babel/cli": "^7.11.5",
@@ -65,12 +70,12 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/sataerik/react-pannellum-sata#readme",
+  "homepage": "https://github.com/hoaiduyit/react-pannellum#readme",
   "jsnext:main": "dist/index.es.js",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "name": "react-pannellum-sata",
+  "name": "react-pannellum",
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^16.13.1",
