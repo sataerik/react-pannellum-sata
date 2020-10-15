@@ -1,39 +1,28 @@
 {
-  "_args": [
-    [
-      "react-pannellum-sata@0.1.15",
-      "E:\\Projects\\React\\kkando"
-    ]
-  ],
-  "_from": "react-pannellum-sata@0.1.15",
-  "_id": "react-pannellum-sata@0.1.15",
-  "_inBundle": false,
-  "_integrity": "sha512-NbQ6j2huSxgZo+EaEJmTwyuRkAi3lmm2uF9idzOQe5B02L8jWsw6CNTDmRNyw0iB5Xcb8kmsB7HWlKhiWZMM+w==",
-  "_location": "/react-pannellum-sata",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "react-pannellum-sata@0.1.15",
-    "name": "react-pannellum-sata",
-    "escapedName": "react-pannellum-sata",
-    "rawSpec": "0.1.15",
-    "saveSpec": null,
-    "fetchSpec": "0.1.15"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "",
-  "_spec": "0.1.15",
-  "_where": "E:\\Projects\\React\\kkando",
-  "author": {
-    "name": "hoaiduyit"
-  },
-  "bugs": {
-    "url": "https://github.com/hoaiduyit/react-pannellum/issues"
-  },
+  "name": "react-pannellum-sata",
+  "version": "0.1.15",
   "description": "A library show panorama image for react",
+  "author": "hoaiduyit",
+  "license": "MIT",
+  "repository": "sataerik/react-pannellum-sata",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "test": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.5",
@@ -63,33 +52,7 @@
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-url": "^2.2.2"
   },
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
   "files": [
     "dist"
-  ],
-  "homepage": "https://github.com/hoaiduyit/react-pannellum#readme",
-  "jsnext:main": "dist/index.es.js",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "name": "react-pannellum",
-  "peerDependencies": {
-    "prop-types": "^15.5.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sataerik/react-pannellum-sata.git"
-  },
-  "scripts": {
-    "build": "rollup -c",
-    "start": "rollup -c -w",
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom"
-  },
-  "version": "0.1.15"
+  ]
 }
