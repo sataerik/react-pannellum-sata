@@ -1,28 +1,34 @@
 {
-  "name": "react-pannellum-sata",
-  "version": "0.1.15",
+  "_from": "git+https://github.com/sataerik/react-pannellum-sata.git",
+  "_id": "react-pannellum-sata@0.1.15",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-pannellum-sata",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/sataerik/react-pannellum-sata",
+    "rawSpec": "https://github.com/sataerik/react-pannellum-sata",
+    "saveSpec": "git+https://github.com/sataerik/react-pannellum-sata.git",
+    "fetchSpec": "https://github.com/sataerik/react-pannellum-sata.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/sataerik/react-pannellum-sata.git#c5e61c6cb62b1565921290aed0ae22133d73a438",
+  "_spec": "https://github.com/sataerik/react-pannellum-sata",
+  "_where": "E:\\Projects\\React\\kkando",
+  "author": {
+    "name": "hoaiduyit"
+  },
+  "bugs": {
+    "url": "https://github.com/sataerik/react-pannellum-sata/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "A library show panorama image for react",
-  "author": "hoaiduyit",
-  "license": "MIT",
-  "repository": "sataerik/react-pannellum-sata",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
-  "scripts": {
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "build": "rollup -c",
-    "start": "rollup -c -w"
-  },
-  "peerDependencies": {
-    "prop-types": "^15.5.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
   "devDependencies": {
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.5",
@@ -52,7 +58,33 @@
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-url": "^2.2.2"
   },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
   "files": [
     "dist"
-  ]
+  ],
+  "homepage": "https://github.com/sataerik/react-pannellum-sata#readme",
+  "jsnext:main": "dist/index.es.js",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "name": "react-pannellum-sata",
+  "peerDependencies": {
+    "prop-types": "^15.5.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sataerik/react-pannellum-sata.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "test": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom"
+  },
+  "version": "0.1.15"
 }
