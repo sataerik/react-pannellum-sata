@@ -1,5 +1,4 @@
-# react-pannellum-sata ()
-## (A modification of [react-pannellum](https://github.com/hoaiduyit/react-pannellum))
+# react-pannellum-sata (a modification of [react-pannellum](https://github.com/hoaiduyit/react-pannellum))
 
 > A library show panorama image for react
 
