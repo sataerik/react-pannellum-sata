@@ -10,7 +10,7 @@ It's mostly the same as react-pannellum, but changing the uiText property works 
 ## Install
 
 ```bash
-npm install --save https://github.com/sataerik/react-pannellum-sata
+npm install --save react-pannellum-sata
 ```
 
 ## Usage
