@@ -1527,27 +1527,8 @@ var pannellum = (function (window, document, undefined$1) {
       touchPanSpeedCoeffFactor: 1,
       capturedKeyNumbers: [16, 17, 27, 37, 38, 39, 40, 61, 65, 68, 83, 87, 107, 109, 173, 187, 189],
       friction: 0.15
-    }; // Translatable / configurable strings
-    // Some strings contain '%s', which is a placeholder for inserted values
-    // When setting strings in external configuration, `\n` should be used instead of `<br>` to insert line breaks
-
-    // defaultConfig.strings = {
-    //   // Labels
-    //   loadButtonLabel: "<p>Katt to load panorama</p>",
-    //   loadingLabel: "Loading...",
-    //   bylineLabel: "by %s",
-    //   // One substitution: author
-    //   // Errors
-    //   noPanoramaError: "No panorama image was specified.",
-    //   fileAccessError: "The file %s could not be accessed.",
-    //   // One substitution: file URL
-    //   malformedURLError: "There is something wrong with the panorama URL.",
-    //   iOS8WebGLError: "Due to iOS 8's broken WebGL implementation, only " + "progressive encoded JPEGs work for your device (this " + "panorama uses standard encoding).",
-    //   genericWebGLError: "Your browser does not have the necessary WebGL support to display this panorama.",
-    //   textureSizeError: "This panorama is too big for your device! It's " + "%spx wide, but your device only supports images up to " + "%spx wide. Try another device." + " (If you're the author, try scaling down the image.)",
-    //   // Two substitutions: image width, max image width
-    //   unknownError: "Unknown error. Check developer console."
-    // };
+    };
+    
     defaultConfig.strings = Object.assign(uiText,_uiText);
 
     container = typeof container === "string" ? document.getElementById(container) : container;
@@ -4697,6 +4678,9 @@ var pannellum = (function (window, document, undefined$1) {
   };
 })(typeof window === "undefined" ? null : window, typeof document === "undefined" ? null : document);
 
+// Translatable / configurable strings
+// Some strings contain '%s', which is a placeholder for inserted values
+// When setting strings in external configuration, `\n` should be used instead of `<br>` to insert line breaks
 var uiText = {
   loadButtonLabel: '<p>Kattints ide a panoráma betöltéséhez</p>',
   loadingLabel: 'Töltés...',
@@ -4712,7 +4696,7 @@ var uiText = {
 var style = {
   width: '600px',
   height: '400px',
-  background: '#000000'
+  background: 'linear-gradient(20deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%)'
 };
 
 function myPromise(condition) {

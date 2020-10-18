@@ -1,4 +1,7 @@
-# react-pannellum-sata (a modification of [react-pannellum](https://github.com/hoaiduyit/react-pannellum))
+# react-pannellum-sata
+
+### A modification of [react-pannellum](https://github.com/hoaiduyit/react-pannellum)
+It's mostly the same as react-pannellum, but changing the uiText property works now (also updated the default uiText)
 
 > A library show panorama image for react
 
